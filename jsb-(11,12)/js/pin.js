@@ -7,7 +7,7 @@ class Pin {
         this.code = null;
         this.loadCode()
 
-        this.element.addEventListener("keydown", this.onKeyDownBubbling.bind(this), true);
+        this.element.addEventListener("input", this.onKeyDownBubbling.bind(this), true);
         this.element.addEventListener("drop", this.onPasteBubbling.bind(this), true);
 
         parent.replaceChild(this.element, element);
